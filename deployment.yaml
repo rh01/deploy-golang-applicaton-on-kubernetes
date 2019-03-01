@@ -64,14 +64,13 @@ spec:
     k8s-app: goappk8s
 
 ---
-apiVersion: extensions/v1beta1
 kind: Ingress
+apiVersion: extensions/v1beta1
 metadata:
   name: goapp-ingress
-  namespace: kube-apps
 spec:
   rules:
-  - host: goappk8s.local
+  - host: k8sapp1.41sh.cn
     http:
       paths:
       - path: /
